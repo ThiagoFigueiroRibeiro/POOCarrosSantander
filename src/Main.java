@@ -64,13 +64,12 @@ public class Main {
 
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
-
-        ModuloEletrico moduloEletrico = new ModuloEletricoCaminhao();
         CaminhaoEletrico caminhaoEletrico =
-                new CaminhaoEletrico("abc", 2022, moduloEletrico);
+                new CaminhaoEletrico("abc", 2022);
 
         caminhaoEletrico.carregar(220);
+
+        System.out.println("Hello World!");
     }
 
 }

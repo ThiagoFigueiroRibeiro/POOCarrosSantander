@@ -1,24 +1,28 @@
-public class CaminhaoEletrico extends Caminhao {
-    private ModuloEletrico moduloEletrico;
+public class CaminhaoEletrico extends Caminhao implements ModuloEletrico {
+
+    @Override
+    public void acelerar(int velocidade) {
+
+    }
+
+    @Override
+    public void frear(int velocidade) {
+
+    }
 
     public CaminhaoEletrico(
             String modelo,
-            Integer ano,
-            ModuloEletrico moduloEletrico
+            Integer ano
     ) {
         super(modelo, ano);
-        this.moduloEletrico = moduloEletrico;
+    }
+
+    @Override
+    public void ativarModoEco() {
+
     }
 
     public void carregar(int voltagem) {
-        this.moduloEletrico.carregar(voltagem);
     }
 
-    public ModuloEletrico getModuloEletrico() {
-        return moduloEletrico;
-    }
-
-    public void setModuloEletrico(ModuloEletrico moduloEletrico) {
-        this.moduloEletrico = moduloEletrico;
-    }
 }

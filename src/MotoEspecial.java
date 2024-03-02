@@ -1,14 +1,27 @@
-public class MotoEspecial extends Moto {
-    private SistemaDeTransporte sistemaDeTransporte;
-    private ModuloEletrico moduloEletrico;
-
+public class MotoEspecial extends Moto implements ModuloEletrico, SistemaDeTransporte {
     public MotoEspecial(
             String modelo,
-            Integer ano,
-            SistemaDeTransporte sistemaDeTransporte,
-            ModuloEletrico moduloEletrico) {
+            Integer ano) {
         super(modelo, ano);
-        this.moduloEletrico = moduloEletrico;
-        this.sistemaDeTransporte = sistemaDeTransporte;
+    }
+
+    @Override
+    public void ativarModoEco() {
+
+    }
+
+    @Override
+    public void carregar(int voltagem) {
+
+    }
+
+    @Override
+    public void controleDeCarga(double peso, int distancia) {
+
+    }
+
+    @Override
+    public void calcularRota(String[] pontosDeEntrega) {
+
     }
 }

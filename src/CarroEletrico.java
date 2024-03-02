@@ -1,9 +1,9 @@
-public class Carro extends Veiculo implements SistemaDeTransporte {
+public class CarroEletrico extends Carro implements ModuloEletrico, SistemaDeTransporte {
     // atributos
     // contrutor
     // metodos
 
-    public Carro(String modelo, Integer ano) {
+    public CarroEletrico(String modelo, Integer ano) {
         super(modelo, ano);
     }
 
@@ -15,6 +15,16 @@ public class Carro extends Veiculo implements SistemaDeTransporte {
     @Override
     public void frear(int velocidade) { // freIo
         System.out.println("Carro freando");
+    }
+
+    @Override
+    public void ativarModoEco() {
+
+    }
+
+    @Override
+    public void carregar(int voltagem) {
+
     }
 
     @Override
