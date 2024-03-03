@@ -8,7 +8,7 @@ Alunos:
 
 * Thiago Figueiró Ribeiro
 
-O código foi alterado para que as interfaces Criação de interfaces "Módulo elétrico" e "Sistema de Transporte" e implementação delas em classes que precisam delas.
+O código foi alterado para criar interfaces "Módulo elétrico" e "Sistema de Transporte" e implementa-las em classes que precisam delas.
 
 ![image](https://github.com/ThiagoFigueiroRibeiro/POOCarrosSantander/assets/8943388/0787154e-6bdb-4c3a-b2ef-3040fe345300)
 Diagrama do sistema. Note que as linhas azuis representam herança e as linhas verdes representam implementação de interfaces.
